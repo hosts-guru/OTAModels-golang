@@ -433,9 +433,9 @@ const (
 // otamodel.EnumString Used to request or specify a gender assignment for a room. Note: Typically used by
 // Hosteliers.
 const (
-	GenderFemale            otamodel.EnumString = "Female"
+	GenderFemale  otamodel.EnumString = "Female"
 	GenderUnknown otamodel.EnumString = "Unknown"
-	GenderMale              otamodel.EnumString = "Male"
+	GenderMale    otamodel.EnumString = "Male"
 )
 
 // CommunicationLocation Specifies a location for communication.
@@ -448,14 +448,14 @@ const (
 
 // AddressUseEnumBase Describes how an address is to be used.
 const (
-	AddressUseContact otamodel.EnumString = "Contact"
-	AddressUseOther   otamodel.EnumString = "Other_"
-	AddressUseBilling                   otamodel.EnumString = "Billing"
-	AddressUseChain                     otamodel.EnumString = "Chain"
-	AddressUseCreditCard                otamodel.EnumString = "Credit card"
-	AddressUseDelivery                  otamodel.EnumString = "Delivery"
-	AddressUseDeposit                   otamodel.EnumString = "Deposit"
-	AddressUseMailing                   otamodel.EnumString = "Mailing"
-	AddressUsePhysical                  otamodel.EnumString = "Physical"
-	AddressUsePreOpeningOffice          otamodel.EnumString = "Pre-opening office"
+	AddressUseContact          otamodel.EnumString = "Contact"
+	AddressUseOther            otamodel.EnumString = "Other_"
+	AddressUseBilling          otamodel.EnumString = "Billing"
+	AddressUseChain            otamodel.EnumString = "Chain"
+	AddressUseCreditCard       otamodel.EnumString = "Credit card"
+	AddressUseDelivery         otamodel.EnumString = "Delivery"
+	AddressUseDeposit          otamodel.EnumString = "Deposit"
+	AddressUseMailing          otamodel.EnumString = "Mailing"
+	AddressUsePhysical         otamodel.EnumString = "Physical"
+	AddressUsePreOpeningOffice otamodel.EnumString = "Pre-opening office"
 )
