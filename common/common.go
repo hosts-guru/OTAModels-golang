@@ -3,11 +3,11 @@ package common
 import "github.com/hosts-guru/OTAModels-golang"
 
 type ImageID struct {
-	Type                  string                 `json:"@type"`
-	Sort                  int                    `json:"sort"`
-	ObjID                 string                 `json:"objID"`
-	URL                   string                 `json:"URL,omitempty"` // URL of the multimedia item for a specific format.
-	MultimediaDescription *MultimediaDescription `json:"MultimediaDescription"`
+	Type                  string                  `json:"@type"`
+	Sort                  int                     `json:"sort"`
+	ObjID                 string                  `json:"objID"`
+	URL                   string                  `json:"URL,omitempty"` // URL of the multimedia item for a specific format.
+	MultimediaDescription []MultimediaDescription `json:"MultimediaDescription"`
 }
 
 // Description Assigned Type: ota2-0500:Description
