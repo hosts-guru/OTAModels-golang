@@ -1,6 +1,6 @@
 package common
 
-import otamodel "\"github.com/hosts-guru/OTAModels-golang\""
+import "github.com/hosts-guru/OTAModels-golang"
 
 type ImageID struct {
 	Type                  string                 `json:"@type"`
