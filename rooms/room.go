@@ -9,7 +9,7 @@ import (
 // RoomTypeID Assigned Type: ph-0200:RoomType
 type RoomTypeID struct {
 	Type  string `json:"@type"`
-	ObjID string `json:"objID,omitempty"` // A unique identifier within this document for this object.
+	ObjID string `json:"objID,omitempty" dynamodbav:"objID,omitempty"` // A unique identifier within this document for this object.
 }
 
 // RoomType Assigned Type: ph-0200:RoomType
