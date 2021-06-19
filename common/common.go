@@ -3,7 +3,7 @@ package common
 import "github.com/hosts-guru/OTAModels-golang"
 
 type ImageID struct {
-	Type                  string                  `json:"@type"`
+	Type                  string                  `json:"@type,omitempty"`
 	Sort                  int                     `json:"sort"`
 	ObjID                 string                  `json:"objID"`
 	URL                   string                  `json:"URL,omitempty"` // URL of the multimedia item for a specific format.
@@ -12,9 +12,8 @@ type ImageID struct {
 
 // Description Assigned Type: ota2-0500:Description
 type Description struct {
-	Type              string              `json:"@type"`
+	Type              string              `json:"@type,omitempty"`
 	DateTimeStamp     *DateTimeStamp      `json:"DateTimeStamp"` // Assigned Type: ota2-0500:DateTimeStamp
-	ExtensionPoint    interface{}         `json:"ExtensionPoint"`
 	Image             []ImageID           `json:"Image,omitempty"`
 	Name              string              `json:"name,omitempty"`   // Assigned Type: ota2-0500:StringTiny
 	Number            int64               `json:"number,omitempty"` // The sequence number for the paragraph.
@@ -24,7 +23,7 @@ type Description struct {
 }
 
 type MultimediaDescription struct {
-	Type     string `json:"@type"`
+	Type     string `json:"@type,omitempty"`
 	Title    string `json:"title"`
 	Language string `json:"language"`
 	Caption  string `json:"caption"`
@@ -74,12 +73,11 @@ type DateTimeStamp struct {
 }
 
 type Amenity struct {
-	Type           string                   `json:"@type"`
-	Code           *Code                    `json:"Code"`                  // Assigned Type: ota2-0500:Code
-	Description    string                   `json:"description,omitempty"` // Assigned Type: ota2-0500:StringShort
-	ExtensionPoint interface{}              `json:"ExtensionPoint"`
-	Name           string                   `json:"name,omitempty"` // Assigned Type: ota2-0500:String
-	Proximity      *otamodel.EnumStringBase `json:"Proximity"`      // Assigned Type: ota2-0400:Proximity_Enum
+	Type        string                   `json:"@type,omitempty"`
+	Code        *Code                    `json:"Code"`                  // Assigned Type: ota2-0500:Code
+	Description string                   `json:"description,omitempty"` // Assigned Type: ota2-0500:StringShort
+	Name        string                   `json:"name,omitempty"`        // Assigned Type: ota2-0500:String
+	Proximity   *otamodel.EnumStringBase `json:"Proximity"`             // Assigned Type: ota2-0400:Proximity_Enum
 }
 
 // Code Assigned Type: ota2-0500:Code
